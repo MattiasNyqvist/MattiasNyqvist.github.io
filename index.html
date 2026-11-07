@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattias Nyqvist - Fullstack Developer</title>
+    <style>
+        :root {
+            --bg-color: #12181b;
+            --card-bg: #1e262c;
+            --text-color: #e0e6ed;
+            --text-muted: #94a3b8;
+            --accent-teal: #367588;
+            --accent-hover: #458eA4;
+            --border-color: #2e3842;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            width: 100%;
+            max-width: 480px;
+            padding: 32px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-teal);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        p.title {
+            color: var(--accent-teal);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        p.bio {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 28px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .link-button:hover {
+            background-color: var(--accent-teal);
+            border-color: var(--accent-teal);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .link-button.primary {
+            background-color: var(--accent-teal);
+            border-color: var(--accent-teal);
+            color: #ffffff;
+        }
+
+        .link-button.primary:hover {
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        footer {
+            margin-top: 28px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Byt ut bild-URL nedan till din egen profilbild om du önskar -->
+        <img src="https://github.com/MattiasNyqvist.png" alt="Mattias Nyqvist" class="profile-img">
+        
+        <h1>Mattias Nyqvist</h1>
+        <p class="title">Fullstack System Developer | .NET & Web</p>
+        
+        <p class="bio">
+            Welcome! I build clean, robust applications with a focus on modern software architecture, continuous learning, and scalable systems.
+        </p>
+
+        <div class="links-container">
+            <a href="https://blog.nyqvist.net" target="_blank" rel="noopener noreferrer" class="link-button primary">
+                Tech Blog (blog.nyqvist.net)
+            </a>
+
+            <a href="https://github.com/MattiasNyqvist" target="_blank" rel="noopener noreferrer" class="link-button">
+                GitHub Profile
+            </a>
+
+            <a href="https://onscreen.nyqvist.net" target="_blank" rel="noopener noreferrer" class="link-button">
+                Code On Screen Project
+            </a>
+
+            <a href="https://www.linkedin.com/in/mattiasnyqvist/" target="_blank" rel="noopener noreferrer" class="link-button">
+                LinkedIn
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Mattias Nyqvist
+        </footer>
+    </div>
+
+</body>
+</html>
